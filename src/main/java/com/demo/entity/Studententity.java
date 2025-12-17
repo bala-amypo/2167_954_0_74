@@ -5,9 +5,8 @@ public class StudentEntity{
     private int age;
     private String email;
     public StudentEntity(){
-
     }
-    public StudentEntity(Long id,String name.int age,String email){
+    public StudentEntity(long id,String name.int age,String email){
         this.id=id;
         this.name=name;
         this.age=age;
