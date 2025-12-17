@@ -1,12 +1,12 @@
 package com.example.demo.entity;
-public class StudentEntity{
+public class Studententity{
     private Long id;
     private String name;
     private int age;
     private String email;
-    public StudentEntity(){
+    public Studententity(){
     }
-    public StudentEntity(long id,String name.int age,String email){
+    public Studententity(Long id,String name.int age,String email){
         this.id=id;
         this.name=name;
         this.age=age;
