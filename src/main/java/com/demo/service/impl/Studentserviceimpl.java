@@ -11,7 +11,6 @@ public class StudentServiceImpl implements StudentService{
         st.setId(counter++);
         store.put(st.getId(),st);
         return st;
-        
     }
     @Override
     public List<Student>getAllStudent(){
@@ -25,5 +24,4 @@ public class StudentServiceImpl implements StudentService{
     public void deleteStudent(Long id){
         store.remove(id);
     }
-
 }
