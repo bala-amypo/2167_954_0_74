@@ -7,5 +7,23 @@ public class StudentEntity{
     public StudentEntity(){
 
     }
-    public StudentEntity(Long id,st)
+    public StudentEntity(Long id,String name.int age,String email){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+        this.email=email;
+    }
+    public Long setId(){
+        return id;
+    }
+    public Long getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        
+    }
+
 }
