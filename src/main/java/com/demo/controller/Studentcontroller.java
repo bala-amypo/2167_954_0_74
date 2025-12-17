@@ -9,23 +9,18 @@ import com.example.demo.service.StudentService;
 public class StudentController {
     @Autowired
     private StudentService service;
-    // ADD
     @PostMapping("/add")
     public StudentEntity addStudent(@RequestBody StudentEntity student) {
         return service.addStudent(student);
     }
-    // GET ALL
     @GetMapping("/all")
     public List<StudentEntity> getAllStudents() {
         return service.getAllStudents();
     }
-    // GET BY ID
     @GetMapping("/{id}")
     public StudentEntity getStudentById(@PathVariable Long id) {
         return service.getStudentById(id);
     }
-
-    // UPDATE
     @PutMapping("/update/{id}")
     public StudentEntity updateStudent(
             @PathVariable Long id,
